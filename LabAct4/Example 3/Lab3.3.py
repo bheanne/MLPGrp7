@@ -7,9 +7,9 @@ cvrimg = cv.cvtColor(image, cv.COLOR_BGR2RGB) # This converts the color from RGB
 
 x_axis = 135
 y_axis = 25
-ave = cv.blur(cvrimg,(5,5)) 
+ave = cv.blur(cvrimg,(2,2)) 
 
-laplacian = cv.Laplacian(ave, 5, cv.CV_64F)
+laplacian = cv.Laplacian(ave, 6, cv.CV_64F)
 filtered_image = cv.convertScaleAbs(laplacian)
 
 
@@ -24,7 +24,7 @@ plt.axis("off")
 
 # show the second image
 plt.subplot(122)
-plt.imshow(laplacian, cmap='gray')
+plt.imshow(filtered_image, cmap='gray')
 plt.title('edged')
 plt.axis("off")
 
