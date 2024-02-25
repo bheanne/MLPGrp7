@@ -8,15 +8,15 @@ zobel = cv.blur(omz, (3, 3))
 
 # zobel x
 zobelx = cv.Sobel(src=zobel, ddepth=cv.CV_64F, dx=1, dy=0, ksize=3)
-# fltrd_zx = cv.convertScaleAbs(zobelx)
+fltrd_zx = cv.convertScaleAbs(zobelx)
 
 # zobel y
 zobely = cv.Sobel(src=zobel, ddepth=cv.CV_64F, dx=0, dy=1, ksize=3)
-# fltrd_zy = cv.convertScaleAbs(zobely)
+fltrd_zy = cv.convertScaleAbs(zobely)
 
 # zsobel xy
 zobelxy = cv.Sobel(src=zobel, ddepth=cv.CV_64F, dx=1, dy=1, ksize=3)
-# fltrd_zxy = cv.convertScaleAbs(zobelxy)
+fltrd_zxy = cv.convertScaleAbs(zobelxy)
 
 # set figure size
 plt.figure(figsize=(10, 5))
