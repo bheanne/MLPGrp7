@@ -1,6 +1,5 @@
 import cv2 as cv
 from matplotlib import pyplot as plt
-from matplotlib.animation import FuncAnimation
 
 image = cv.imread('images\\image1.jpg')
 cvrimg = cv.cvtColor(image, cv.COLOR_BGR2RGB) # This converts the color from RGB to BGR
