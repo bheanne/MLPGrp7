@@ -26,15 +26,15 @@ plt.subplot(221), plt.imshow(omz, cmap='gray'), plt.title('Original Image')
 plt.axis('off')
 
 # show 2nd image - sobel y
-plt.subplot(222), plt.imshow(zobelx, cmap='gray'), plt.title('Sobel X Image')
+plt.subplot(222), plt.imshow(fltrd_zx, cmap='gray'), plt.title('Sobel X Image')
 plt.axis('off')
 
 # show 3rd image
-plt.subplot(223), plt.imshow(zobely, cmap='gray'), plt.title('Sobel Y Image')
+plt.subplot(223), plt.imshow(fltrd_zy, cmap='gray'), plt.title('Sobel Y Image')
 plt.axis('off')
 
 # show 4th image - sobel xy
-plt.subplot(224), plt.imshow(zobelxy, cmap='gray'), plt.title('Sobel XY Image')
+plt.subplot(224), plt.imshow(fltrd_zxy, cmap='gray'), plt.title('Sobel XY Image')
 plt.axis('off')
 
 #show the frame
